@@ -1,0 +1,392 @@
+/* Ensure sufficient contrast for text */
+body {
+  background-color: #f0f0f0; /* Light grey background */
+  color: #000000; /* Black text */
+  font-family: Arial, sans-serif; /* Set font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+header {
+  background-color: #333333; /* Dark background */
+  color: #ffffff; /* Light text */
+  padding: 20px; /* Add padding */
+  text-align: center; /* Center text */
+  font-size: 1.5em; /* Increase font size */
+}
+
+nav {
+  background-color: #444444; /* Slightly lighter dark background */
+  color: #ffffff; /* Light text */
+  display: -webkit-box; /* Use flexbox for layout */
+  display: -ms-flexbox; /* Use flexbox for layout */
+  display: flex; /* Use flexbox for layout */
+  -webkit-box-pack: justify; /* Space out nav items */
+      -ms-flex-pack: justify; /* Space out nav items */
+          justify-content: space-around; /* Space out nav items */
+  padding: 10px; /* Add padding */
+}
+
+nav a {
+  color: #ffffff; /* White links */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Add padding */
+  font-size: 1.2em; /* Increase font size */
+}
+
+nav a:focus, nav a:hover {
+  color: #1a73e8; /* Blue links on hover/focus */
+}
+
+footer {
+  background-color: #333333; /* Dark background */
+  color: #ffffff; /* Light text */
+  padding: 10px; /* Add padding */
+  text-align: center; /* Center text */
+}
+
+a {
+  color: #1a73e8; /* Blue links */
+}
+
+a:focus, a:hover {
+  color: #d93025; /* Red links on hover/focus */
+}
+
+button {
+  background-color: #1a73e8; /* Blue button */
+  color: #ffffff; /* White text */
+}
+
+button:focus, button:hover {
+  background-color: #d93025; /* Red button on hover/focus */
+}
+
+.about-me {
+  text-align: left; /* Align text to the left */
+  font-size: 1.2em; /* Set font size */
+  margin: 20px; /* Add margin around the section */
+  padding: 20px; /* Add padding inside the section */
+  line-height: 1.6; /* Increase line height for better readability */
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark text color */
+  border: 1px solid #dddddd; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.projects {
+  display: -webkit-box; /* Use flexbox for layout */
+  display: -ms-flexbox; /* Use flexbox for layout */
+  display: flex; /* Use flexbox for layout */
+  -webkit-box-lines: multiple; /* Allow items to wrap to the next line */
+      -ms-flex-wrap: wrap; /* Allow items to wrap to the next line */
+          flex-wrap: wrap; /* Allow items to wrap to the next line */
+  -webkit-box-pack: justify; /* Space out project cards */
+      -ms-flex-pack: justify; /* Space out project cards */
+          justify-content: space-around; /* Space out project cards */
+  margin: 20px 0; /* Add margin around the section */
+}
+
+.project-card {
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark text color */
+  border: 1px solid #dddddd; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  margin: 10px; /* Add margin around each card */
+  padding: 20px; /* Add padding inside each card */
+  -webkit-box-flex: 1; /* Responsive width with margin */
+      -ms-flex: 1 1 calc(33.333% - 40px); /* Responsive width with margin */
+          flex: 1 1 calc(33.333% - 40px); /* Responsive width with margin */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.project-card h3 {
+  font-size: 1.5em; /* Increase font size for headings */
+  margin-top: 0; /* Remove top margin */
+}
+
+.project-card p {
+  font-size: 1em; /* Set font size for paragraphs */
+  line-height: 1.6; /* Increase line height for better readability */
+}
+
+.skills {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.skills li {
+  font-size: 1.2em; /* Set font size */
+  margin: 10px 0; /* Add margin between items */
+  padding-left: 30px; /* Add padding to make space for icons */
+  position: relative; /* Position relative for pseudo-element */
+}
+
+.skills li::before {
+  content: ''; /* Empty content for icon */
+  display: inline-block; /* Inline block for icon */
+  width: 20px; /* Set width for icon */
+  height: 20px; /* Set height for icon */
+  background-size: contain; /* Ensure icon fits */
+  background-repeat: no-repeat; /* No repeat for icon */
+  position: absolute; /* Absolute positioning */
+  left: 0; /* Align to the left */
+  top: 50%; /* Center vertically */
+  -webkit-transform: translateY(-50%); /* Adjust for vertical centering */
+      -ms-transform: translateY(-50%); /* Adjust for vertical centering */
+          transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+/* Example icons for specific skills */
+.skills .html::before {
+  background-image: url('path/to/html-icon.png'); /* Path to HTML icon */
+}
+
+.skills .css::before {
+  background-image: url('path/to/css-icon.png'); /* Path to CSS icon */
+}
+
+.skills .javascript::before {
+  background-image: url('path/to/javascript-icon.png'); /* Path to JavaScript icon */
+}
+
+.contact {
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark text color */
+  border: 1px solid #dddddd; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Add padding inside the section */
+  margin: 20px; /* Add margin around the section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.contact h2 {
+  font-size: 1.5em; /* Increase font size for headings */
+  margin-top: 0; /* Remove top margin */
+}
+
+.contact form {
+  display: -webkit-box; /* Use flexbox for layout */
+  display: -ms-flexbox; /* Use flexbox for layout */
+  display: flex; /* Use flexbox for layout */
+  -webkit-box-orient: vertical; /* Stack form elements vertically */
+  -webkit-box-direction: normal; /* Stack form elements vertically */
+      -ms-flex-direction: column; /* Stack form elements vertically */
+          flex-direction: column; /* Stack form elements vertically */
+}
+
+.contact label {
+  font-size: 1.2em; /* Set font size */
+  margin-bottom: 10px; /* Add margin below labels */
+}
+
+.contact input,
+.contact textarea {
+  font-size: 1em; /* Set font size */
+  padding: 10px; /* Add padding inside inputs */
+  margin-bottom: 20px; /* Add margin below inputs */
+  border: 1px solid #dddddd; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.contact button {
+  background-color: #1a73e8; /* Blue button */
+  color: #ffffff; /* White text */
+  padding: 10px 20px; /* Add padding inside button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.2em; /* Increase font size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.contact button:focus,
+.contact button:hover {
+  background-color: #d93025; /* Red button on hover/focus */
+}
+
+/* Hamburger menu icon */
+.hamburger {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 4px 0;
+}
+
+/* Ensure images and videos are responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure JPG images are responsive */
+img[src$=".jpg"] {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add this to your CSS file */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.9em; /* Adjust font size */
+  }
+
+  .projects {
+    -webkit-box-orient: vertical; /* Stack project cards vertically */
+    -webkit-box-direction: normal; /* Stack project cards vertically */
+        -ms-flex-direction: column; /* Stack project cards vertically */
+            flex-direction: column; /* Stack project cards vertically */
+  }
+
+  .project-card {
+    -webkit-box-flex: 1; /* Full width for project cards */
+        -ms-flex: 1 1 100%; /* Full width for project cards */
+            flex: 1 1 100%; /* Full width for project cards */
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  .contact {
+    padding: 10px; /* Adjust padding */
+    margin: 10px; /* Adjust margin */
+  }
+
+  .contact form {
+    -webkit-box-orient: vertical; /* Stack form elements vertically */
+    -webkit-box-direction: normal; /* Stack form elements vertically */
+        -ms-flex-direction: column; /* Stack form elements vertically */
+            flex-direction: column; /* Stack form elements vertically */
+  }
+}
+
+/* Navigation adjustments for 768px breakpoint */
+@media only screen and (max-width: 768px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: none; /* Hide navigation by default */
+  }
+
+  nav.active {
+    display: -webkit-box; /* Show navigation when active */
+    display: -ms-flexbox; /* Show navigation when active */
+    display: flex; /* Show navigation when active */
+  }
+
+  .hamburger {
+    display: -webkit-box; /* Show hamburger menu icon */
+    display: -ms-flexbox; /* Show hamburger menu icon */
+    display: flex; /* Show hamburger menu icon */
+  }
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  body {
+    font-size: 1em; /* Adjust font size */
+  }
+
+  .projects {
+    -webkit-box-orient: horizontal; /* Row layout for project cards */
+    -webkit-box-direction: normal; /* Row layout for project cards */
+        -ms-flex-direction: row; /* Row layout for project cards */
+            flex-direction: row; /* Row layout for project cards */
+    -webkit-box-lines: multiple; /* Allow wrapping */
+        -ms-flex-wrap: wrap; /* Allow wrapping */
+            flex-wrap: wrap; /* Allow wrapping */
+  }
+
+  .project-card {
+    -webkit-box-flex: 1; /* Two cards per row */
+        -ms-flex: 1 1 calc(50% - 20px); /* Two cards per row */
+            flex: 1 1 calc(50% - 20px); /* Two cards per row */
+    margin: 10px; /* Adjust margin */
+  }
+
+  .contact {
+    padding: 15px; /* Adjust padding */
+    margin: 15px; /* Adjust margin */
+  }
+}
+
+/* Large devices (desktops, 900px and up) */
+@media only screen and (min-width: 901px) {
+  body {
+    font-size: 1.1em; /* Adjust font size */
+  }
+
+  .projects {
+    -webkit-box-orient: horizontal; /* Row layout for project cards */
+    -webkit-box-direction: normal; /* Row layout for project cards */
+        -ms-flex-direction: row; /* Row layout for project cards */
+            flex-direction: row; /* Row layout for project cards */
+    -webkit-box-lines: multiple; /* Allow wrapping */
+        -ms-flex-wrap: wrap; /* Allow wrapping */
+            flex-wrap: wrap; /* Allow wrapping */
+  }
+
+  .project-card {
+    -webkit-box-flex: 1; /* Three cards per row */
+        -ms-flex: 1 1 calc(33.333% - 40px); /* Three cards per row */
+            flex: 1 1 calc(33.333% - 40px); /* Three cards per row */
+    margin: 10px; /* Adjust margin */
+  }
+
+  .contact {
+    padding: 20px; /* Adjust padding */
+    margin: 20px; /* Adjust margin */
+  }
+}

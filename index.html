@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple JS - Web Development Portfolio</title>
+  <meta name="description" content="Welcome to Temple JS, a portfolio showcasing the web development projects and skills of Caleb, a passionate web developer.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Arial', 'Helvetica', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Georgia', 'Times New Roman', serif;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hamburger-icon">☰</div>
+    <nav>
+      <ul>
+        <li><a href="#home" tabindex="0">Home</a></li>
+        <li><a href="#about" tabindex="0">About</a></li>
+        <li><a href="#services" tabindex="0">Services</a></li>
+        <li><a href="#contact" tabindex="0">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+    <p>This is an introduction to web development with JavaScript.</p>
+  </article>
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p>Hi, I'm Temple, a passionate web developer with a love for creating dynamic and interactive web applications. <br>
+        With a strong foundation in JavaScript, I enjoy exploring new technologies and continuously improving my skills.</p>
+    <h3>Skills</h3>
+    <ul>
+      <li>JavaScript</li>
+      <li>HTML & CSS</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>Express</li>
+      <li>MongoDB</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <input type="text" id="project-filter" placeholder="Filter projects...">
+    <div class="projects">
+      <div class="project" data-name="Project One">Project One</div>
+      <div class="project" data-name="Project Two">Project Two</div>
+      <div class="project" data-name="Project Three">Project Three</div>
+      <!-- Add more projects as needed -->
+    </div>
+    <article>
+      <figure>
+        <img src="project1.jpg" width="265" height="200" alt="Screenshot of Project 1: A dynamic web application that allows users to interact with real-time data." tabindex="0">
+        <figcaption>Project 1: Dynamic Web Application</figcaption>
+      </figure>
+      <p>A dynamic web application that allows users to interact with real-time data.</p>
+    </article> <br><br><br>
+    <article>
+      <figure>
+        <img src="project2.jpg" width="245" height="200"  alt="Screenshot of Project 2: An e-commerce platform with a user-friendly interface and secure payment integration." tabindex="0">
+        <figcaption>Project 2: E-commerce Platform</figcaption>
+      </figure>
+      <p>An e-commerce platform with a user-friendly interface and secure payment integration.</p>
+    </article><br><br><br>
+    <article>
+      <figure>
+        <img src="project3.jpg" width="200" height="200"  alt="Screenshot of Project 3: A personal portfolio website showcasing my projects and skills." tabindex="0">
+        <figcaption>Project 3: Portfolio Website</figcaption>
+      </figure>
+      <p> A personal portfolio website showcasing my projects and skills.</p>
+    </article>
+  </section>
+ 
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Temple JS. All rights reserved.</p>
+  </footer>
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <!-- Example project image -->
+  <img src="path/to/image.jpg" class="project-image" alt="Project Image">
+  <script src="script.js"></script>
+</body>
+</html>
